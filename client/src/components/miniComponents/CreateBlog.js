@@ -98,7 +98,7 @@ const CreateBlog = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/blog/post",
+        "https://blog-app-digvijaysinh08s-projects.vercel.app/blog/post",
         formData,
         {
           withCredentials: true,

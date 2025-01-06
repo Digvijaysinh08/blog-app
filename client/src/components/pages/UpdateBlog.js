@@ -29,7 +29,7 @@ const UpdateBlog = () => {
     const fetchBlog = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:8080/api/v1/blog/singleblog/${id}`,
+          `https://blog-app-digvijaysinh08s-projects.vercel.app/blog/singleblog/${id}`,
           { withCredentials: true }
         );
         setTitle(data.blog.title);
@@ -105,7 +105,7 @@ const UpdateBlog = () => {
 
     try {
       const { data } = await axios.put(
-        `http://localhost:8080/api/v1/blog/update/${id}`,
+        `https://blog-app-digvijaysinh08s-projects.vercel.app/blog/update/${id}`,
         updatedBlog,
         { withCredentials: true }
       );
@@ -187,10 +187,10 @@ const UpdateBlog = () => {
             <img
               src={
                 mainImagePreview
-                  ? `${mainImagePreview}` // If paraOneImage exists, use it directly
-                  : mainImage // Otherwise, use paraOneImagePreview
+                  ? `${mainImagePreview}` 
+                  : mainImage 
                   ? `${mainImage}`
-                  : "/imgPL.webp" // If neither paraOneImage nor paraOneImagePreview exists, use an empty string
+                  : "/imgPL.webp"
               }
               alt="subParaOneImg"
             />
@@ -219,10 +219,10 @@ const UpdateBlog = () => {
             <img
               src={
                 paraOneImagePreview
-                  ? `${paraOneImagePreview}` // If paraOneImage exists, use it directly
-                  : paraOneImage // Otherwise, use paraOneImagePreview
+                  ? `${paraOneImagePreview}` 
+                  : paraOneImage 
                   ? `${paraOneImage}`
-                  : "/imgPL.webp" // If neither paraOneImage nor paraOneImagePreview exists, use an empty string
+                  : "/imgPL.webp" 
               }
               alt="subParaOneImg"
             />
@@ -254,10 +254,10 @@ const UpdateBlog = () => {
             <img
               src={
                 paraTwoImagePreview
-                  ? `${paraTwoImagePreview}` // If paraOneImage exists, use it directly
-                  : paraTwoImage // Otherwise, use paraOneImagePreview
+                  ? `${paraTwoImagePreview}` 
+                  : paraTwoImage 
                   ? `${paraTwoImage}`
-                  : "/imgPL.webp" // If neither paraOneImage nor paraOneImagePreview exists, use an empty string
+                  : "/imgPL.webp" 
               }
               alt="subParaOneImg"
             />
@@ -291,10 +291,10 @@ const UpdateBlog = () => {
             <img
               src={
                 paraThreeImagePreview
-                  ? `${paraThreeImagePreview}` // If paraOneImage exists, use it directly
-                  : paraThreeImage // Otherwise, use paraOneImagePreview
+                  ? `${paraThreeImagePreview}` 
+                  : paraThreeImage 
                   ? `${paraThreeImage}`
-                  : "/imgPL.webp" // If neither paraOneImage nor paraOneImagePreview exists, use an empty string
+                  : "/imgPL.webp" 
               }
               alt="subParaOneImg"
             />

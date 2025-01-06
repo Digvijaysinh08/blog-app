@@ -34,8 +34,8 @@ app.get("/", (req, res) => {
   });
 
 
-app.use("/api/v1/user", userRouter);
-app.use("/api/v1/blog", blogRouter);
+app.use("/user", userRouter);
+app.use("/blog", blogRouter);
 
 connectDB();
 

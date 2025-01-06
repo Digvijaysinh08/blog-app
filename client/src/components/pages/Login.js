@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/v1/user/login",
+        "https://blog-app-digvijaysinh08s-projects.vercel.app/user/login",
         { email, password, role },
         {
           withCredentials: true,
@@ -24,8 +24,8 @@ const Login = () => {
       );
   
       toast.success(res.data.message);
-      setIsAuthenticated(true); // Update authentication state
-      setUser(res.data.user); // Set user data in context
+      setIsAuthenticated(true); 
+      setUser(res.data.user); 
       setEmail("");
       setPassword("");
       setRole("");

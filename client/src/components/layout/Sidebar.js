@@ -15,7 +15,7 @@ const Sidebar = ({ setComponent }) => {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/user/logout",
+        "https://blog-app-digvijaysinh08s-projects.vercel.app/user/logout",
         { withCredentials: true }
       );
       setIsAuthenticated(false);

@@ -10,7 +10,7 @@ const AllAuthors = () => {
   useEffect(() => {
     const fetchAuthors = async () => {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/user/authors",
+        "https://blog-app-digvijaysinh08s-projects.vercel.app/user/authors",
         { withCredentials: true }
       );
       setAuthors(data.authors);

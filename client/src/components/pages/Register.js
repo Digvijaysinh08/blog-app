@@ -41,7 +41,7 @@ const Register = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/user/register",
+        "https://blog-app-digvijaysinh08s-projects.vercel.app/user/register",
         formData,
         {
           withCredentials: true,

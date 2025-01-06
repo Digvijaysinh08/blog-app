@@ -1,4 +1,3 @@
-// footer.js
 import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Context } from "../../index";

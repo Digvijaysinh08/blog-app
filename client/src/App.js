@@ -22,7 +22,7 @@ function App() {
     useEffect(() => {
       const fetchUser = async () => {
         try {
-          const response = await axios.get("http://localhost:8080/api/v1/user/myprofile", {
+          const response = await axios.get("https://blog-app-digvijaysinh08s-projects.vercel.app/user/myprofile", {
             withCredentials: true, 
           });
           console.log("User data:", response.data);
@@ -38,7 +38,7 @@ function App() {
       const fetchBlogs = async () => {
         try {
           const { data } = await axios.get(
-            "http://localhost:8080/api/v1/blog/allblog",
+            "https://blog-app-digvijaysinh08s-projects.vercel.app/blog/allblog",
             { withCredentials: true }
           );
           console.log("Fetched blogs:", data.allBlogs);
