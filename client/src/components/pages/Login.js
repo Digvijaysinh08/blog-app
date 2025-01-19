@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://blog-app-digvijaysinh08s-projects.vercel.app/user/login",
+        "http://localhost:8080/user/login",
         { email, password, role },
         {
           withCredentials: true,

@@ -1,7 +1,4 @@
 import React, { useContext } from "react";
-import { Context } from "../../index";
-import { Link } from "react-router-dom";
-import { SyncLoader } from "react-spinners";
 
 const HeroSection = () => {
   return (
