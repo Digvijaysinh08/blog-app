@@ -10,7 +10,7 @@ const MyBlogs = () => {
   useEffect(() => {
     const fetchMyBlogs = async () => {
       const { data } = await axios.get(
-        "https://back-blog-app.vercel.app//blog/myblogs",
+        "https://back-blog-app.vercel.app/blog/myblogs",
         { withCredentials: true }
       );
       setMyBlogs(data.blogs);
@@ -20,7 +20,7 @@ const MyBlogs = () => {
 
   const deleteBlogHandler = async (id) => {
     await axios
-      .delete(`https://back-blog-app.vercel.app//blog/delete/${id}`, {
+      .delete(`https://back-blog-app.vercel.app/blog/delete/${id}`, {
         withCredentials: true,
       })
       .then((res) => {

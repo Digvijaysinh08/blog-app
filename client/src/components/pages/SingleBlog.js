@@ -12,7 +12,7 @@ const SingleBlog = () => {
     const getSingleBlog = async () => {
       try {
         const { data } = await axios.get(
-          `https://back-blog-app.vercel.app//blog/singleblog/${id}`,
+          `https://back-blog-app.vercel.app/blog/singleblog/${id}`,
           { withCredentials: true }
         );
         setBlog(data.blog);
